@@ -13,12 +13,9 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
-    /* margin dan padding sudah di reset di *, jadi ini mungkin duplikat.
-       Tapi jika ada kasus spesifik body butuh margin/padding, bisa dipertahankan.
-       Saya akan menghapus yang duplikat jika '*' sudah menangani. */
-    overflow-x: hidden; /* Mencegah scroll horizontal */
-    height: 100vh; /* Memastikan body mengisi seluruh viewport tinggi */
-    overflow-y: auto; /* Mengizinkan scroll vertikal jika konten melebihi tinggi viewport */
+    overflow-x: hidden;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 /* --- 3. Main Layout & Page Wrapper --- */
@@ -488,7 +485,7 @@ footer {
     color: #4f4f4f;
     font-family: 'DM Sans', sans-serif;
     box-sizing: border-box;
-    padding: 15px 5%; /* Ini adalah padding global footer, konten di dalamnya bisa punya max-width */
+    padding: 15px 5%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     width: 100%;
 }
@@ -518,7 +515,7 @@ footer {
 
 .footer-brand .tagline {
     font-size: 1.1rem;
-    font-weight: bold; /* Duplikasi font-weight, pilih salah satu */
+    font-weight: bold;
     line-height: 1.4;
     margin-bottom: 20px;
     color: #222325;
@@ -601,7 +598,6 @@ footer ul li a:hover {
 
 /* --- 10. Responsiveness (Media Queries) --- */
 
-/* For devices up to 1024px wide (e.g., Tablets) */
 @media (max-width: 1024px) {
     /* Navbar */
     nav {
@@ -688,21 +684,20 @@ footer ul li a:hover {
     }
 }
 
-/* For devices up to 768px wide (e.g., Smaller Tablets & Landscape Phones) */
 @media (max-width: 768px) {
     /* Navbar */
     nav {
-        padding: 10px 3%; /* Duplikasi, tapi tidak masalah */
+        padding: 10px 3%;
     }
     .nav-left .logo-img {
-        height: 35px; /* Duplikasi, tapi tidak masalah */
+        height: 35px;
     }
     .nav-right a {
-        font-size: 1em; /* Duplikasi, tapi tidak masalah */
+        font-size: 1em;
     }
     .nav-right .avatar {
         width: 35px;
-        height: 35px; /* Duplikasi, tapi tidak masalah */
+        height: 35px;
     }
 
     /* Hero Section */
@@ -832,7 +827,6 @@ footer ul li a:hover {
     }
 }
 
-/* For devices up to 480px wide (e.g., Mobile Phones) */
 @media (max-width: 480px) {
     /* Navbar */
     nav {
